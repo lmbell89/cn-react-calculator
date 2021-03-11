@@ -1,0 +1,23 @@
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "advanced basic"
+    "numbers basic";
+}
+
+.basic {
+    grid-area: basic;
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers, .other {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
